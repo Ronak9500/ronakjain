@@ -76,6 +76,24 @@
         .contact-link:hover {
             color: #666;
         }
+
+        /* Styling for recommendation form */
+        #recommendation-form {
+            margin-top: 20px;
+        }
+        #recommendation-form textarea,
+        #recommendation-form input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #recommendation-form textarea {
+            height: 100px;
+        }
     </style>
 </head>
 <body>
@@ -86,6 +104,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
             </ul>
         </nav>
     </header>
@@ -115,6 +134,17 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/yourprofile" class="contact-link">linkedin.com/yourprofile</a></p>
     </section>
 
+    <!-- Recommendation form section -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <form id="recommendation-form">
+            <textarea name="recommendation-text" placeholder="Write your recommendation here" required></textarea>
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="submit" value="Submit Recommendation">
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2024 Data Scientist Portfolio. All rights reserved.</p>
     </footer>
@@ -132,5 +162,3 @@
     </script>
 </body>
 </html>
-
-
