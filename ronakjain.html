@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Scientist Portfolio</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Styling for sections */
+        section {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+        }
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for project cards */
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .project-card h3 {
+            color: #333;
+        }
+
+        /* Styling for contact links */
+        .contact-link {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+        }
+        .contact-link:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Scientist Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my data scientist portfolio! I'm passionate about using data to solve complex problems and extract valuable insights. With a background in [Your background], I have experience in [Specific skills or technologies]. Feel free to explore my projects and reach out to me!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1: [Project Name]</h3>
+            <p>Description: [Brief description of the project]</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: [Project Name]</h3>
+            <p>Description: [Brief description of the project]</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me!</p>
+        <p>Email: <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/yourprofile" class="contact-link">linkedin.com/yourprofile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Data Scientist Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
